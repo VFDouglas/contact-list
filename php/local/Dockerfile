@@ -7,3 +7,5 @@ RUN apt-get install -y nodejs npm
 RUN docker-php-ext-install intl ldap zip mysqli pdo pdo_mysql gd ftp
 RUN mkdir -p /var/www/html
 COPY . /var/www/html
+
+RUN chown -R www-data:www-data /var/www/html/

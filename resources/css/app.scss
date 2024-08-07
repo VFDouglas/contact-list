@@ -1,0 +1,49 @@
+@import "bootstrap/scss/bootstrap";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.collapse {
+    visibility: unset !important;
+}
+
+#spinner_react {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    border-radius: 100%;
+    z-index: 10500;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 max(100vh, 100vw) rgba(0, 0, 0, .3);
+}
+
+.opacity-0 {
+    opacity: unset !important;
+}
+
+.spinner {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    animation: rotation .6s infinite linear;
+    border-left: 6px solid rgba(0, 174, 239, .15);
+    border-right: 6px solid rgba(0, 174, 239, .15);
+    border-bottom: 6px solid rgba(0, 174, 239, .15);
+    border-top: 6px solid rgba(0, 174, 239, .8);
+    border-radius: 100%;
+    z-index: 10500;
+    box-shadow: 0 0 0 max(100vh, 100vw) rgba(0, 0, 0, .3);
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
