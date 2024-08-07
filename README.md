@@ -1,24 +1,15 @@
-# docker-laravel
-Laravel example project with Docker, MySQL and Redis
+# Contact List
+Basic contact list made with Laravel, React and Docker
 
 Installation guide:
 
 Clone the project
 ```
-git clone https://github.com/VFDouglas/docker-laravel.git
-```
-Clone a Laravel project or use an existing one.
-```
-git clone https://github.com/laravel/laravel.git
-```
-
-Copy the docker-laravel files to your Laravel project
-```
-cp -rf docker-laravel/* laravel/
+git clone https://github.com/VFDouglas/contact-list.git
 ```
 Enter the project:
 ```
-cd laravel
+cd contact-list
 ```
 Create a `.env` file, but only if you're in a new project:
 ```
